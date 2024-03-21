@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valinor.hu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krona+One">
+    <style>
+        body{
+            background-color: #6F6866;
+            margin: 0px;
+            height: 4000px;
+            font-family: "Krona One" !important;
+        }
+        .container{
+            position: relative;
+            left: 50em;
+        }
+        #rect2{
+            
+            background-color: #788585;
+        }
+        #rect1{
+            transform: translate(-300px, 500px);
+            background-color: #CCDAD1;
+        }
+        .container > div{
+            width: 390px;
+            height: 390px;
+            position: relative;
+        }
+        .container > div :hover{
+            filter: hue-rotate(50deg);
+        }
+        span{
+            font-family: "Krona One";
+            color: white;
+            font-size: 110px;
+            position: absolute;
+            top: 5.33em;
+            left: -1.77em;
+            z-index: 99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>Valinor</span>
+        <div id="rect1"></div>
+        <div id="rect2"></div>
+    </div>
+    <script>
+        document.addEventListener('mousemove', function(event) {
+    var positionX = event.clientX;
+    var positionY = event.clientY;
+    document.getElementById("rect1").style.transform = "translate("+Math.round(positionX/window.screen.width*1000)+"px,"+(positionY/window.screen.height*1000)-500+"px)";
+    console.log("translate("+Math.round(positionX/window.screen.width*1000)+"px,"+(positionY/window.screen.height*1000)-500+"px)")
+    
+});
+    </script>
+</body>
+</html>

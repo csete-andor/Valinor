@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rectangular Div Shift</title>
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        position: relative;
+    }
+
+    #rect {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="rect"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var container = document.getElementById('container');
+    var rect = document.getElementById('rect');
+    
+    container.addEventListener('mousemove', function(event) {
+        var mouseX = event.clientX - container.offsetLeft;
+        var mouseY = event.clientY - container.offsetTop;
+        
+        var rectX = mouseX - rect.offsetWidth / 2;
+        var rectY = mouseY - rect.offsetHeight / 2;
+        
+        // Ensure the rectangle stays within the container
+        rectX = Math.max(0, Math.min(container.offsetWidth - rect.offsetWidth, rectX));
+        rectY = Math.max(0, Math.min(container.offsetHeight - rect.offsetHeight, rectY));
+        
+        rect.style.left = rectX + 'px';
+        rect.style.top = rectY + 'px';
+    });
+});
+</script>
+</body>
+</html>
