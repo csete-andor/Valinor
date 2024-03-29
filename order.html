@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Hello World</title>
+</head>
+<body>
+  <h1>Firebase Hello World</h1>
+  <button id="sendDataBtn">Send Data to Firestore</button>
+
+  <!-- Add Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"></script>
+
+  <script>
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDj7rGWfEz2awkRnoNx0p2euT-1YOH3Buw",
+    authDomain: "valinor-test.firebaseapp.com",
+    projectId: "valinor-test",
+    storageBucket: "valinor-test.appspot.com",
+    messagingSenderId: "8550832766",
+    appId: "1:8550832766:web:bcd348ec5f53ed2186162f",
+    measurementId: "G-SQY2XZSPT7"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const db = firebase.firestore();
+
+    // Reference to the collection
+    const collectionRef = db.collection('messages');
+
+    // Function to send data to Firestore
+    const sendDataToFirestore = () => {
+      // Add a new document with a generated ID
+      collectionRef.add({
+        message: "Hello World"
+      })
+      .then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+      })
+      .catch((error) => {
+        console.error("Error adding document: ", error);
+      });
+    };
+
+    // Event listener for button click
+    const sendDataBtn = document.getElementById('sendDataBtn');
+    sendDataBtn.addEventListener('click', sendDataToFirestore);
+  </script>
+</body>
+</html>
