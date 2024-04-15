@@ -1,157 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valninor - Építőipari szakértő</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ledger&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/icon.png">
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="/code/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ledger&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/icon.png" />
+    <script src="/code/app.js" defer></script>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <article>
-        <header>
-            <div id="languages">
-                <div class="en language"></div>
-                <div class="de language"></div>
-            </div>
-            <div id="menu">
-            </div>
+      <header>
+        <div id="languages">
+          <div class="en language"></div>
+          <div class="de language"></div>
+        </div>
+        <div id="menu"></div>
+        <div id="menuItems">
+          <div class="container">
+            <a class="white krona" href="/code/">Kezdőlap</a>
+            <a class="white krona" href="about.html">Rólunk</a>
+            <a class="white krona" href="services.html">Szolgáltatások</a>
+            <a class="white krona" href="references.html">Referenciák</a>
+            <a class="white krona" href="contacts.html">Kapcsolat</a>
+          </div>
+          <div class="square a"></div>
+          <div class="square b"></div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div id="logo"></div>
 
-        </header>
-        <main>
-            <section>
-                <div id="logo">
-                </div>
-
-                <p class="white medium-large" id="intro-paragraph">Termékeink és szolgáltatásaink kéz a kézben járnak az
-                    innovációval és minőséggel, hogy megépítsük álmaidat valósággá. Az építőipari szektorban otthon
-                    vagyunk, és minden projektünket a legmagasabb szakértelemmel és elkötelezettséggel végezzük el.</p>
-                <div id="contacts-container"><a href="contacts.html">Kapcsolat</a></div>
-            </section>
-            <section>
-                <div id="why-us">
-                    <ul class="white">
-                        <p class="krona white">Miért válaszon minket?</p>
-                        <div style="padding-left: 50px;">
-                            <li>Megbízható tervezés</li>
-                            <li>Több éves tapasztalat</li>
-                            <li>Prémium minőség</li>
-                            <li>Szakképzett csapat</li>
-                            <li>Hatékony és gyors kivitelezés</li>
-                        </div>
-                    </ul>
-                    <a href="about.html">Rólunk</a>
-                </div>
-            </section>
-            <section id="valinor-card">
-                <div class="card"></div>
-                <p class="white medium-large">Üdvözöljük a Valinor világában, ahol minden falat történetet mesél és
-                    minden tégla az álmok építőköve. Cégünk nem csupán falakat emel, hanem életeket formál, közösségeket
-                    erősít és jövőt épít. Ha Ön is részese szeretne lenni ennek a lendületes és átalakító folyamatnak,
-                    akkor ne habozzon, válassza szolgáltatásainkat!
-                    Mi, a Valinor Építőipari Kft., büszkén kínáljuk széleskörű szolgáltatásainkat mindenki számára, aki
-                    kompromisszumok nélküli minőséget és megbízhatóságot keres az építőipar területén. Legyen szó
-                    lakóházakról, irodaházakról, vagy akár közösségi terek kialakításáról, mi mindig a legmagasabb
-                    szintű szakértelmet és precizitást nyújtjuk ügyfeleinknek.</p>
-                <hr style="width: 120px; margin-top: 2em;" class="white">
-            </section>
-            <section id="references">
-                <p class="white krona title" style="margin-left: 12.5vw;">Munkáink</p>
-                <div id="works">
-                    <div class="cards">
-                        <p class="krona">Szervertermi falépítés</p>
-                        <div class="img" style="background-image: url(szerverterem.png);"></div>
-                    </div>
-                    <div class="cards">
-                        <p class="krona">Csatorna fedelezés</p>
-                        <div class="img" style="background-image: url(csatorna.png);"></div>
-                    </div>
-                    <div class="cards">
-                        <p class="krona">Irodafelújítás</p>
-                        <div class="img" style="background-image: url(iroda.png);"></div>
-                    </div>
-                    <div class="cards">
-                        <p class="krona">Burkolás</p>
-                        <div class="img" style="background-image: url(burkolas.png);"></div>
-                    </div>
-                </div>
-                <a href="references.html">Referenciák</a>
-            </section>
-            <section id="servicesCards">
-                <p class="krona white title">Szolgáltatásaink</p>
-                <div id="services">
-                    <div class="service hidden">
-                        <p class="krona title">Festés, tapétázás</p>
-                        <p class="grey">Frissítsd fel otthonodat új színekkel és mintákkal! Profi festőink és
-                            tapétázóink gondoskodnak arról, hogy falaid új életre keljenek, és az elképzeléseid valóra
-                            váljanak.</p>
-                        <div class="img" style="background-image: url(images/services/festes.png);"></div>
-                        <a href="services.html">Érdekel</a>
-                    </div>
-                    <div class="service hidden">
-                        <p class="krona title">Burkolás</p>
-                        <p class="grey">Adj egyedi stílust és funkcionalitást otthonodnak vagy vállalkozásodnak!
-                            Szakértő burkolóink precízen és esztétikusan helyezik el a csempéket és egyéb
-                            burkolóanyagokat, hogy környezeted tökéletes harmóniában ragyogjon.</p>
-                        <div class="img" style="background-image: url(images/services/burkolas.png);"></div>
-                        <a href="services.html">Érdekel</a>
-                    </div>
-                    <div class="service hidden">
-                        <p class="krona title">Villamossági munkák</p>
-                        <p class="grey"> Legyen otthonod vagy irodád biztonságos és modern! Tapasztalt villanyszerelőink
-                            gondoskodnak arról, hogy az elektromos rendszerek és berendezések pontosan működjenek, és
-                            megfeleljenek az aktuális szabványoknak.</p>
-                        <div class="img" style="background-image: url(images/services/villamos.png);"></div>
-                        <a href="services.html">Érdekel</a>
-                    </div>
-                    <div class="service hidden">
-                        <p class="krona title">Gipszkarton falépítés</p>
-                        <p class="grey">Alakítsd át tereidet könnyedén és rugalmasan! Szakembereink a gipszkarton
-                            ideális kombinációjával alkotnak térhatású megoldásokat, amelyekkel gyorsan és hatékonyan
-                            alakíthatod át otthonod vagy irodád elrendezését.</p>
-                        <div class="img" style="background-image: url(images/services/gipszkarton.png);"></div>
-                        <a href="services.html">Érdekel</a>
-                    </div>
-                    <div class="service hidden">
-                        <p class="krona title">Asztalosmunkák</p>
-                        <p class="grey">Egyedi bútorok, praktikus tárolók és stílusos kiegészítők! Asztalosaink precíz
-                            munkájával megvalósíthatod az álmaidat, legyen szó egyedi bútorról, vagy egy praktikus
-                            beépített szekrényről.</p>
-                        <div class="img" style="background-image: url(images/services/asztalos.png);"></div>
-                        <a href="services.html">Érdekel</a>
-                    </div>
-                </div>
-                <a href="services.html" class="more">Bővebben</a>
-            </section>
-        </main>
-        <footer>
-            <p class="title white krona">Valinor Kft.</p>
-            <a target="_blank" href="mailto:info@valinor.hu" class="white">info@valinor.hu</a><br>
-            <a target="_blank" href="tel:+36304442663" class="white">+36 30 444 2663</a>
-            <div class="img"></div>
-        </footer>
+          <p class="white medium-large" id="intro-paragraph">
+            Termékeink és szolgáltatásaink kéz a kézben járnak az innovációval
+            és minőséggel, hogy megépítsük álmait valósággá. Az építőipari
+            szektorban otthon vagyunk, és minden projektünket a legmagasabb
+            szakértelemmel és elkötelezettséggel végezzük el.
+          </p>
+          <div id="contacts-container">
+            <a href="contacts.html">Kapcsolat</a>
+          </div>
+        </section>
+        <section>
+          <div id="why-us">
+            <ul class="white">
+              <p class="krona white">Miért válaszon minket?</p>
+              <div style="padding-left: 50px">
+                <li>Megbízható tervezés</li>
+                <li>Több éves tapasztalat</li>
+                <li>Prémium minőség</li>
+                <li>Szakképzett csapat</li>
+                <li>Hatékony és gyors kivitelezés</li>
+              </div>
+            </ul>
+            <a href="about.html">Rólunk</a>
+          </div>
+        </section>
+        <section id="valinor-card">
+          <div class="card"></div>
+          <p class="white medium-large">
+            Üdvözöljük a Valinor világában, ahol minden fal történetet mesél és
+            minden tégla az álmok építőköve. Cégünk nem csupán falakat emel,
+            hanem életeket formál, közösségeket erősít és jövőt épít. Ha Ön is
+            részese szeretne lenni ennek a lendületes és átalakító folyamatnak,
+            akkor ne habozzon, válassza szolgáltatásainkat! Mi, a Valinor
+            Kft-nál, büszkén kínáljuk széleskörű szolgáltatásainkat mindenki
+            számára, aki kompromisszumok nélküli minőséget és megbízhatóságot
+            keres az építőipar területén. Legyen szó lakóházakról,
+            irodaházakról, vagy akár közösségi terek kialakításáról, mi mindig a
+            legmagasabb szintű szakértelmet és precizitást nyújtjuk
+            ügyfeleinknek.
+          </p>
+          <hr style="width: 120px; margin-top: 2em" class="white" />
+        </section>
+        <section id="references">
+          <p class="white krona title" style="margin-left: 12.5vw">Munkáink</p>
+          <div id="works">
+            <div class="cards">
+              <p class="krona">Szervertermi falépítés</p>
+              <div
+                class="img"
+                style="background-image: url(szerverterem.png)"
+              ></div>
+            </div>
+            <div class="cards">
+              <p class="krona">Csatorna fedelezés</p>
+              <div
+                class="img"
+                style="background-image: url(csatorna.png)"
+              ></div>
+            </div>
+            <div class="cards">
+              <p class="krona">Irodafelújítás</p>
+              <div class="img" style="background-image: url(iroda.png)"></div>
+            </div>
+            <div class="cards">
+              <p class="krona">Burkolás</p>
+              <div
+                class="img"
+                style="background-image: url(burkolas.png)"
+              ></div>
+            </div>
+          </div>
+          <a href="references.html">Referenciák</a>
+        </section>
+        <section id="servicesCards">
+          <p class="krona white title">Szolgáltatásaink</p>
+          <div id="services">
+            <div class="service hidden">
+              <p class="krona title">Festés, tapétázás</p>
+              <p class="grey">
+                Frissítse fel otthonát új színekkel és mintákkal! Profi festőink
+                gondoskodnak arról, hogy falai új életre keljenek, és az
+                elképzelései valóra váljanak.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/festes.png)"
+              ></div>
+              <a href="services.html">Érdekel</a>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Burkolás</p>
+              <p class="grey">
+                Adjon egyedi stílust és funkcionalitást otthonának vagy
+                vállalkozásának! Szakértő burkolóink precízen és esztétikusan
+                helyezik el a csempéket és egyéb burkolóanyagokat, hogy
+                környezete tökéletes harmóniában ragyogjon.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/burkolas.png)"
+              ></div>
+              <a href="services.html">Érdekel</a>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Villamossági munkák</p>
+              <p class="grey">
+                Legyen otthona vagy irodája biztonságos és modern! Tapasztalt
+                villanyszerelőink gondoskodnak arról, hogy az elektromos
+                rendszerek és berendezések pontosan működjenek, és megfeleljenek
+                az aktuális szabványoknak.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/villamos.png)"
+              ></div>
+              <a href="services.html">Érdekel</a>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Gipszkarton falépítés</p>
+              <p class="grey">
+                Alakítsa át tereit könnyedén és rugalmasan! Szakembereink a
+                gipszkarton ideális kombinációjával alkotnak térhatású
+                megoldásokat, amelyekkel gyorsan és hatékonyan alakíthatja át
+                otthona vagy irodája elrendezését.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/gipszkarton.png)"
+              ></div>
+              <a href="services.html">Érdekel</a>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Asztalosmunkák</p>
+              <p class="grey">
+                Egyedi bútorok, praktikus tárolók és stílusos kiegészítők!
+                Asztalosaink precíz munkájával megvalósíthatja az álmait, legyen
+                szó egyedi bútorról, vagy egy praktikus beépített szekrényről.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/asztalos.png)"
+              ></div>
+              <a href="services.html">Érdekel</a>
+            </div>
+          </div>
+          <a href="services.html" class="more">Bővebben</a>
+        </section>
+      </main>
+      <footer>
+        <p class="title white krona">Valinor Kft.</p>
+        <a target="_blank" href="mailto:info@valinor.hu" class="white"
+          >info@valinor.hu</a
+        ><br />
+        <a target="_blank" href="tel:+36304442663" class="white"
+          >+36 30 444 2663</a
+        >
+        <div class="img"></div>
+      </footer>
     </article>
     <script defer>
-        let IsMenuOpen = false;
-        let menu = document.getElementById("menu")
-        document.getElementById("menu").addEventListener("click", menuClicked);
-        function menuClicked() {
-            if (IsMenuOpen == true) {
-                IsMenuOpen = false;
-                menu.style.backgroundImage = "url(images/menu.open.svg)";
-            } else {
-                IsMenuOpen = true;
-                menu.style.backgroundImage = "url(images/menu.closed.svg)";
-            }
+      let IsMenuOpen = false;
+      let menu = document.getElementById("menu");
+      let menuItems = document.getElementById("menuItems");
+      document.getElementById("menu").addEventListener("click", menuClicked);
+      function menuClicked() {
+        if (IsMenuOpen == true) {
+          IsMenuOpen = false;
+          menu.style.backgroundImage = "url(images/menu.open.svg)";
+          menuItems.style.display = "none";
+        } else {
+          IsMenuOpen = true;
+          menuItems.style.display = "block";
+          menu.style.backgroundImage = "url(images/menu.closed.svg)";
         }
+      }
     </script>
-</body>
-
+  </body>
 </html>
