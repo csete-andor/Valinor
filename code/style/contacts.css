@@ -1,0 +1,23 @@
+#logo{
+    height: 162px;
+    width: 236px;
+    background-image: url(/code/images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 0px 5em 5vw;
+}
+h1{
+    display: block;
+    width: 55vw;
+    margin: 0px auto 20px auto;
+    padding: 0px;
+}
+.linkContainer{
+    margin-left: 22.5vw;
+    display: block;
+    margin-top: 50px;
+    background-color: #9CAEA9;
+    width: fit-content;
+    padding: 30px;
+}
