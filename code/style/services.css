@@ -1,0 +1,44 @@
+#logo{
+    height: 162px;
+    width: 236px;
+    background-image: url(/code/images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3.5em 0px 5em 5vw;
+}
+h2{
+    font-size: 22px;
+}
+.card{
+    position: relative;
+    padding: 55px 20px 15px 20px;
+    width: calc(80vw - 40px);
+    margin: 4em auto;
+    background-color: #CCDAD1;
+    height: 400px;
+}
+.card .img{
+    width: 45%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 75px;
+    right: 52%;
+}
+.card a{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 10px;
+}
+.card p, .card h2{
+    width: 40%;
+    margin-left: 50%;
+}
+.intro h1, .intro p{
+    width: 80vw;
+    margin-left: 10vw;
+}
