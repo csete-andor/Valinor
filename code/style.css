@@ -70,6 +70,9 @@ header {
 .language.en {
   background-image: url(/code/images/flags/en.png);
 }
+.language.hu {
+  background-image: url(/code/images/flags/hu.png);
+}
 
 p {
   font-family: Ledger;
@@ -135,7 +138,6 @@ footer a {
 footer .img {
   height: 162px;
   width: 236px;
-  background-image: url(/code/images/logo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,6 +145,15 @@ footer .img {
   right: 0px;
   top: 0px;
   transform: translateY(-50%);
+}
+footer .img.hu{
+  background-image: url(/code/images/logo.png);
+}
+footer .img.en{
+  background-image: url(/code/images/logo.en.png);
+}
+footer .img.de{
+  background-image: url(/code/images/logo.de.png);
 }
 
 .hidden {
@@ -216,4 +227,9 @@ footer .img {
 h1{
     font-size: 40px;
     font-weight: 100;
+}
+header a{
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
 }

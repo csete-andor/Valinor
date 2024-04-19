@@ -14,23 +14,40 @@
     <link rel="icon" type="image/x-icon" href="/code/images/icon.png" />
     <script src="/code/script/app.js" defer></script>
     <script src="/code/script/menu.js" defer></script>
+    <style>
+      #logo {
+        width: 55vw;
+        height: 46vw;
+        background-image: url(/code/images/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+      }
+    </style>
   </head>
 
   <body>
     <article>
       <header>
         <div id="languages">
-          <div class="en language"></div>
-          <div class="de language"></div>
+          <a href="/code/en/about.html"><div class="en language"></div></a>
+          <a href="/code/de/about.html"><div class="de language"></div></a>
         </div>
         <div id="menu"></div>
         <div id="menuItems">
           <div class="container">
             <a tabindex="-1" class="white krona" href="/code/">Kezdőlap</a>
             <a tabindex="-1" class="white krona" href="about.html">Rólunk</a>
-            <a tabindex="-1" class="white krona" href="services.html">Szolgáltatások</a>
-            <a tabindex="-1" class="white krona" href="references.html">Referenciák</a>
-            <a tabindex="-1" class="white krona" href="contacts.html">Kapcsolat</a>
+            <a tabindex="-1" class="white krona" href="services.html"
+              >Szolgáltatások</a
+            >
+            <a tabindex="-1" class="white krona" href="references.html"
+              >Referenciák</a
+            >
+            <a tabindex="-1" class="white krona" href="contacts.html"
+              >Kapcsolat</a
+            >
           </div>
           <div class="square a"></div>
           <div class="square b"></div>
@@ -88,25 +105,28 @@
               <p class="krona">Szervertermi falépítés</p>
               <div
                 class="img"
-                style="background-image: url(/code/images/szerverterem.png)"
+                style="background-image: url(/code/images/serverrom.png)"
               ></div>
             </div>
             <div class="cards">
               <p class="krona">Csatorna fedelezés</p>
               <div
                 class="img"
-                style="background-image: url(/code/images/csatorna.png)"
+                style="background-image: url(/code/images/manhole.png)"
               ></div>
             </div>
             <div class="cards">
               <p class="krona">Irodafelújítás</p>
-              <div class="img" style="background-image: url(/code/images/iroda.png)"></div>
+              <div
+                class="img"
+                style="background-image: url(/code/images/office.png)"
+              ></div>
             </div>
             <div class="cards">
               <p class="krona">Burkolás</p>
               <div
                 class="img"
-                style="background-image: url(/code/images/burkolas.png)"
+                style="background-image: url(/code/images/tiling.png)"
               ></div>
             </div>
           </div>
@@ -124,7 +144,9 @@
               </p>
               <div
                 class="img"
-                style="background-image: url(/code/images/services/festes.png)"
+                style="
+                  background-image: url(/code/images/services/painting.png);
+                "
               ></div>
               <a href="services.html">Érdekel</a>
             </div>
@@ -138,7 +160,7 @@
               </p>
               <div
                 class="img"
-                style="background-image: url(/code/images/services/burkolas.png)"
+                style="background-image: url(/code/images/services/tiling.png)"
               ></div>
               <a href="services.html">Érdekel</a>
             </div>
@@ -152,7 +174,9 @@
               </p>
               <div
                 class="img"
-                style="background-image: url(/code/images/services/villamos.png)"
+                style="
+                  background-image: url(/code/images/services/electrical.png);
+                "
               ></div>
               <a href="services.html">Érdekel</a>
             </div>
@@ -166,7 +190,7 @@
               </p>
               <div
                 class="img"
-                style="background-image: url(/code/images/services/gipszkarton.png)"
+                style="background-image: url(/code/images/services/drywall.png)"
               ></div>
               <a href="services.html">Érdekel</a>
             </div>
@@ -179,7 +203,9 @@
               </p>
               <div
                 class="img"
-                style="background-image: url(/code/images/services/asztalos.png)"
+                style="
+                  background-image: url(/code/images/services/carpentry.png);
+                "
               ></div>
               <a href="services.html">Érdekel</a>
             </div>
@@ -195,7 +221,7 @@
         <a target="_blank" href="tel:+36304442663" class="white"
           >+36 30 444 2663</a
         >
-        <a href="/code/"> <div class="img"></div></a>
+        <a href="/code/"> <div class="img hu"></div></a>
       </footer>
     </article>
   </body>

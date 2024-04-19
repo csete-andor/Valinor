@@ -113,12 +113,3 @@
   right: -3px;
   bottom: 0px;
 }
-#logo {
-  width: 55vw;
-  height: 46vw;
-  background-image: url(/code/images/logo.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
-}

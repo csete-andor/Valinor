@@ -14,14 +14,25 @@
     <link rel="icon" type="image/x-icon" href="/code/images/icon.png" />
     <script src="/code/script/menu.js" defer></script>
     <script src="/code/script/app.js" defer></script>
+    <style>
+      #logo {
+        height: 162px;
+        width: 236px;
+        background-image: url(/code/images/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 3.5em 0px 5em 5vw;
+      }
+    </style>
   </head>
 
   <body>
     <article>
       <header>
         <div id="languages">
-          <div class="en language"></div>
-          <div class="de language"></div>
+          <a href="/code/en/about.html"><div class="en language"></div></a>
+          <a href="/code/de/about.html"><div class="de language"></div></a>
         </div>
         <div id="menu"></div>
         <div id="menuItems">
@@ -78,14 +89,14 @@
         </section>
       </main>
       <footer>
-        <span class="title white krona">Valinor Kft.</span>
+        <p style="margin-left: 0px" class="title white krona">Valinor Kft.</p>
         <a target="_blank" href="mailto:info@valinor.hu" class="white"
           >info@valinor.hu</a
         ><br />
         <a target="_blank" href="tel:+36304442663" class="white"
           >+36 30 444 2663</a
         >
-        <a href="/code"> <div class="img"></div></a>
+        <a href="/code"> <div class="img hu"></div></a>
       </footer>
     </article>
   </body>

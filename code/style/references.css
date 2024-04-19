@@ -1,33 +1,66 @@
-#logo{
-    height: 162px;
-    width: 236px;
-    background-image: url(/code/images/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 3.5em 0px 5em 5vw;
-}
 h2{
     font-size: 22px;
+    font-family: Krona One;
 }
 h1{
     margin-left: 10vw;
 }
 .card{
     width: calc(40vw - 40px);
-    aspect-ratio: 1.6/1;
+    height: 460px;
     background-color: #CCDAD1;
     margin-bottom: 5em;
+    position: relative;
     padding: 20px;
 }
 .card:nth-child(odd){
-    position: relative;
     margin-left: 55vw;
-
 }
 .card:nth-child(even){
     margin-left: 5vw;
 }
+.card .container{
+    display: flex;
+    flex-direction: row;
+}
+.arrow{
+    min-width: 20px;
+    width: 5%;
+}
+.card .after, .card .before{
+    width: 50%;
+}
 .card .img{
-
+    max-width: 280px;
+    width: 100%;
+    margin: auto;
+    height: 373px;
+    background-image: url(/code/images/references/office.after.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card span{
+    display: block;
+    max-width: 260px;
+    width: calc(100% - 20px);
+    margin: auto;
+    transform: translateY(-100%);
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.7);
+    color: white;
+    font-family: Krona One;
+}
+.before span{
+    text-align: right;
+}
+svg{
+    width: 200vw;
+    height: 200vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -99;
+    opacity: 20%;
+    transform: translate(-50%, -50%);
 }
