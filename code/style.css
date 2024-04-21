@@ -146,13 +146,13 @@ footer .img {
   top: 0px;
   transform: translateY(-50%);
 }
-footer .img.hu{
+footer .img.hu {
   background-image: url(/code/images/logo.png);
 }
-footer .img.en{
+footer .img.en {
   background-image: url(/code/images/logo.en.png);
 }
-footer .img.de{
+footer .img.de {
   background-image: url(/code/images/logo.de.png);
 }
 
@@ -180,8 +180,8 @@ footer .img.de{
   transform: translateX(100%);
   transition: 500ms all;
 }
-#menuItems.open{
-    transform: translateX(0);
+#menuItems.open {
+  transform: translateX(0);
 }
 #menuItems a {
   background-color: transparent;
@@ -217,48 +217,46 @@ footer .img.de{
   left: 40vw;
   top: 40vh;
 }
-.hiddenLink{
-    text-decoration: none;
-    background-color: transparent;
-    padding: 0px;
-    margin: 0px;
-    color: black;
+.hiddenLink {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+  color: black;
 }
-h1{
-    font-size: 40px;
-    font-weight: 100;
+h1 {
+  font-size: 40px;
+  font-weight: 100;
 }
-header a{
+header a {
   background-color: transparent;
   padding: 0px;
   margin: 0px;
 }
-#logo{
-  width: 55vw;
-  height: 46vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
-}
-#logo.hu{
+#logo.hu {
   background-image: url(/code/images/logo.png);
 }
-#logo.en{
+#logo.en {
   background-image: url(/code/images/logo.en.png);
 }
-#logo.de{
+#logo.de {
   background-image: url(/code/images/logo.de.png);
 }
-
+#logo {
+  height: 162px;
+  width: 236px;
+  background-image: url(/code/images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3.5em 0px 5em 5vw;
+}
 @media screen and (max-width: 600px) {
-  #menuItems{
+  #menuItems {
     transform: translateX(200%);
   }
-  #logo{
+  #logo {
     background-image: url(/code/images/logo.mobile.png) !important;
-  }
-  #logo{
     width: 95vw;
     height: 46vw;
     background-position: center;
@@ -270,75 +268,22 @@ header a{
     z-index: 99;
     top: -40px;
   }
-  #intro-paragraph{
-    margin-top: 30em;
-    width: 85vw;
-  }
-  #valinor-card .card{
-    position: absolute;
-    top: 15em;
-    transform: translateX(-50%);
-    left: 50%;
-    width: 90vw !important;
-  }
-  #contactsLink{
-    width: 50vw;
-    text-align: center;
-    display: block !important;
-    margin: auto !important;
-    margin-top: 3em !important;
-  }
-  #why-us ul{
-    width: 70vw !important;
-  }
-  #why-us p{
-    font-size: 17px;
-  }
-  #why-us li{
-    font-size: 14px;
-  }
-  #valinor-card p{
-    font-size: 15px;
-  }
-  section{
+  section {
     margin-bottom: 15em;
   }
-  #servicesCards .service{
-    padding: 10px !important;
-    width: 85vw !important;
-    height: 200px !important;
-  }
-  .title{
+  .title {
     font-size: 15px;
   }
-  #services .service .grey {
+  footer .img {
+    width: 40vw;
+    aspect-ratio: 1/0.69;
+    height: auto !important;
+    transform: translateY(-25%) !important;
+  }
+  footer p.title {
+    font-size: 14px !important;
+  }
+  footer a {
     font-size: 10px !important;
+  }
 }
-#services .service p {
-  margin-left: 5px !important;
-}
-#services .img {
-  max-width: 155px;
-  width: 30vw !important;
-  height: 220px !important;
-}
-#services .service a {
-  font-size: 11px !important;
-  left: 0px !important;
-  width: 70px;
-  text-align: center;
-}
-footer .img {
-  width: 40vw;
-  aspect-ratio: 1/0.69;
-  height: auto !important;
-  transform: translateY(-25%) !important;
-}
-footer p.title{
-  font-size: 14px !important;
-}
-footer a{
-  font-size: 10px !important;
-}
-}
-

@@ -29,15 +29,42 @@ section.diagnal:nth-child(odd){
 }
 .rects.a{
     background-image: url(/code/images/about/1.png);
-    right: 25vw;
+    right: 17vw;
     top: 5em;
 }
 .rects.b{
     background-image: url(/code/images/about/2.png);
-    right: 25vw;
+    right: 33vw;
     top: 5em;
 }.rects.c{
     background-image: url(/code/images/about/3.png);
-    right: 25vw;
+    right: 17vw;
     top: 5em;
+}
+@media screen and (max-width: 600px){
+    .rects.a{
+        right: 17vw;
+        top: 5em;
+    }
+    .rects.b{
+        right: 33vw;
+        top: 5em;
+    }.rects.c{
+        right: 17vw;
+        top: 5em;
+    }
+    .rects{
+        position: absolute;
+        z-index: -1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50vw;
+        min-width: 400px;
+        aspect-ratio: 1.52/1;
+        transform: translateY(-50%);
+    }
+    section{
+        margin-bottom: 15em;
+    }
 }

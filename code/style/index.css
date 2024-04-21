@@ -5,7 +5,7 @@
   padding: 10px 40px 20px 40px;
   font-size: 26px;
 }
-#contactsLink{
+#contactsLink {
   width: 150px;
   text-align: center;
   display: block;
@@ -113,4 +113,66 @@
   position: absolute;
   right: -3px;
   bottom: 0px;
+}
+#logo {
+  width: 55vw;
+  height: 46vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+@media screen and (max-width: 600px) {
+  #services .service .grey {
+    font-size: 10px !important;
+  }
+  #services .service p {
+    margin-left: 5px !important;
+  }
+  #services .img {
+    max-width: 155px;
+    width: 30vw !important;
+    height: 220px !important;
+  }
+  #services .service a {
+    font-size: 11px !important;
+    left: 0px !important;
+    width: 70px;
+    text-align: center;
+  }
+  #intro-paragraph {
+    margin-top: 30em;
+    width: 85vw;
+  }
+  #valinor-card .card {
+    position: absolute;
+    top: 15em;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 90vw !important;
+  }
+  #contactsLink {
+    width: 50vw;
+    text-align: center;
+    display: block !important;
+    margin: auto !important;
+    margin-top: 3em !important;
+  }
+  #why-us ul {
+    width: 70vw !important;
+  }
+  #why-us p {
+    font-size: 17px;
+  }
+  #why-us li {
+    font-size: 14px;
+  }
+  #valinor-card p {
+    font-size: 15px;
+  }
+  #servicesCards .service {
+    padding: 10px !important;
+    width: 85vw !important;
+    height: 200px !important;
+  }
 }
