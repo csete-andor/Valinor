@@ -233,3 +233,112 @@ header a{
   padding: 0px;
   margin: 0px;
 }
+#logo{
+  width: 55vw;
+  height: 46vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+#logo.hu{
+  background-image: url(/code/images/logo.png);
+}
+#logo.en{
+  background-image: url(/code/images/logo.en.png);
+}
+#logo.de{
+  background-image: url(/code/images/logo.de.png);
+}
+
+@media screen and (max-width: 600px) {
+  #menuItems{
+    transform: translateX(200%);
+  }
+  #logo{
+    background-image: url(/code/images/logo.mobile.png) !important;
+  }
+  #logo{
+    width: 95vw;
+    height: 46vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-50%);
+    left: 50%;
+    position: fixed;
+    z-index: 99;
+    top: -40px;
+  }
+  #intro-paragraph{
+    margin-top: 30em;
+    width: 85vw;
+  }
+  #valinor-card .card{
+    position: absolute;
+    top: 15em;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 90vw !important;
+  }
+  #contactsLink{
+    width: 50vw;
+    text-align: center;
+    display: block !important;
+    margin: auto !important;
+    margin-top: 3em !important;
+  }
+  #why-us ul{
+    width: 70vw !important;
+  }
+  #why-us p{
+    font-size: 17px;
+  }
+  #why-us li{
+    font-size: 14px;
+  }
+  #valinor-card p{
+    font-size: 15px;
+  }
+  section{
+    margin-bottom: 15em;
+  }
+  #servicesCards .service{
+    padding: 10px !important;
+    width: 85vw !important;
+    height: 200px !important;
+  }
+  .title{
+    font-size: 15px;
+  }
+  #services .service .grey {
+    font-size: 10px !important;
+}
+#services .service p {
+  margin-left: 5px !important;
+}
+#services .img {
+  max-width: 155px;
+  width: 30vw !important;
+  height: 220px !important;
+}
+#services .service a {
+  font-size: 11px !important;
+  left: 0px !important;
+  width: 70px;
+  text-align: center;
+}
+footer .img {
+  width: 40vw;
+  aspect-ratio: 1/0.69;
+  height: auto !important;
+  transform: translateY(-25%) !important;
+}
+footer p.title{
+  font-size: 14px !important;
+}
+footer a{
+  font-size: 10px !important;
+}
+}
+
