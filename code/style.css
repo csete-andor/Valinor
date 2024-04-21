@@ -39,7 +39,7 @@ header {
   height: 21px;
   transform: translateY(-50%);
   cursor: pointer;
-  background-image: url(/code/images/menu.open.svg);
+  background-image: url(images/menu.open.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -65,13 +65,13 @@ header {
   cursor: pointer;
 }
 .language.de {
-  background-image: url(/code/images/flags/de.png);
+  background-image: url(images/flags/de.png);
 }
 .language.en {
-  background-image: url(/code/images/flags/en.png);
+  background-image: url(images/flags/en.png);
 }
 .language.hu {
-  background-image: url(/code/images/flags/hu.png);
+  background-image: url(images/flags/hu.png);
 }
 
 p {
@@ -147,13 +147,13 @@ footer .img {
   transform: translateY(-50%);
 }
 footer .img.hu {
-  background-image: url(/code/images/logo.png);
+  background-image: url(images/logo.png);
 }
 footer .img.en {
-  background-image: url(/code/images/logo.en.png);
+  background-image: url(images/logo.en.png);
 }
 footer .img.de {
-  background-image: url(/code/images/logo.de.png);
+  background-image: url(images/logo.de.png);
 }
 
 .hidden {
@@ -234,18 +234,18 @@ header a {
   margin: 0px;
 }
 #logo.hu {
-  background-image: url(/code/images/logo.png);
+  background-image: url(images/logo.png);
 }
 #logo.en {
-  background-image: url(/code/images/logo.en.png);
+  background-image: url(images/logo.en.png);
 }
 #logo.de {
-  background-image: url(/code/images/logo.de.png);
+  background-image: url(images/logo.de.png);
 }
 #logo {
   height: 162px;
   width: 236px;
-  background-image: url(/code/images/logo.png);
+  background-image: url(images/logo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -256,7 +256,7 @@ header a {
     transform: translateX(200%);
   }
   #logo {
-    background-image: url(/code/images/logo.mobile.png) !important;
+    background-image: url(images/logo.mobile.png) !important;
     width: 95vw;
     height: 46vw;
     background-position: center;
