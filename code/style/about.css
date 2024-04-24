@@ -1,22 +1,26 @@
-h1{
+h1 {
     display: block;
     width: fit-content;
     margin: 0px 0px 2em 10vw;
     padding: 0px;
 }
-p{
+
+p {
     width: 33vw;
     margin-left: 10vw;
     font-size: 20px;
 }
-section{
+
+section {
     position: relative;
     margin-bottom: 40em;
 }
-section.diagnal:nth-child(odd){
+
+section.diagnal:nth-child(odd) {
     margin-left: 47vw;
 }
-.rects{
+
+.rects {
     position: absolute;
     z-index: -1;
     background-position: center;
@@ -27,44 +31,49 @@ section.diagnal:nth-child(odd){
     aspect-ratio: 1.52/1;
     transform: translateY(-50%);
 }
-.rects.a{
+
+.rects.a {
     background-image: url(../images/about/1.png);
     right: 17vw;
     top: 5em;
 }
-.rects.b{
+
+.rects.b {
     background-image: url(../images/about/2.png);
     right: 33vw;
     top: 5em;
-}.rects.c{
+}
+
+.rects.c {
     background-image: url(../images/about/3.png);
     right: 17vw;
     top: 5em;
 }
-@media screen and (max-width: 600px){
-    .rects.a{
-        right: 17vw;
-        top: 5em;
+
+@media screen and (max-width: 600px) {
+    section {
+        margin-bottom: 25em;
+        margin-top: 150px !important;
     }
-    .rects.b{
-        right: 33vw;
-        top: 5em;
-    }.rects.c{
-        right: 17vw;
-        top: 5em;
+
+    h1 {
+        font-size: 28px;
     }
-    .rects{
-        position: absolute;
-        z-index: -1;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 50vw;
-        min-width: 400px;
-        aspect-ratio: 1.52/1;
-        transform: translateY(-50%);
+
+    .rects {
+        width: 95vw !important;
+        min-width: 0px;
+        margin:auto !important;
+        right: unset !important;
+        transform: translateY(22%);
     }
-    section{
-        margin-bottom: 15em;
+
+    .diagnal p {
+        width: 80vw !important;
+        margin: auto;
+        font-size: 13px;
+    }
+    section.diagnal:nth-child(odd) {
+        margin-left: unset !important;
     }
 }

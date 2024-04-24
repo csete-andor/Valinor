@@ -23,7 +23,7 @@ h1{
     display: flex;
     flex-direction: row;
 }
-.arrow{
+.splitter{
     min-width: 20px;
     width: 5%;
 }
@@ -63,4 +63,27 @@ svg{
     z-index: -99;
     opacity: 20%;
     transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 600px){
+    section{
+        margin-top: 150px !important;
+    }
+    .serviceCards .card{
+        margin: auto !important;
+        width: 80vw !important;
+        height: fit-content;
+        margin-bottom: 50px !important;
+    }
+    .serviceCards .card .img{
+        height: 200px !important;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .container span{
+        font-size: 11px;
+    }
+    .serviceCards{
+        margin-top: 50px !important;
+    }
 }

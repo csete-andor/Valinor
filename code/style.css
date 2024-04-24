@@ -55,6 +55,7 @@ header {
   align-items: center;
   transform: translateY(-50%);
 }
+
 .language {
   width: 42px;
   height: 21px;
@@ -64,12 +65,15 @@ header {
   margin: 0px 5px 0px 5px;
   cursor: pointer;
 }
+
 .language.de {
   background-image: url(images/flags/de.png);
 }
+
 .language.en {
   background-image: url(images/flags/en.png);
 }
+
 .language.hu {
   background-image: url(images/flags/hu.png);
 }
@@ -117,24 +121,28 @@ section {
 .grey {
   color: #6f6866;
 }
+
 #servicesCards .more {
   width: fit-content;
   margin: auto;
   margin-top: 6em;
   display: block;
 }
+
 footer {
   margin-top: 5em;
   width: 70vw;
   padding: 0px 10vw 60px 10vw;
   position: relative;
 }
+
 footer a {
   background-color: transparent;
   padding: 0px;
   font-size: 13px;
   transform: translateY(-50%);
 }
+
 footer .img {
   height: 162px;
   width: 236px;
@@ -146,12 +154,15 @@ footer .img {
   top: 0px;
   transform: translateY(-50%);
 }
+
 footer .img.hu {
   background-image: url(images/logo.png);
 }
+
 footer .img.en {
   background-image: url(images/logo.en.png);
 }
+
 footer .img.de {
   background-image: url(images/logo.de.png);
 }
@@ -166,6 +177,7 @@ footer .img.de {
   opacity: 1;
   transform: translateX(0);
 }
+
 #menuItems {
   position: fixed;
   top: 0px;
@@ -174,21 +186,26 @@ footer .img.de {
   height: 100vh;
   background-color: #6f6866;
   z-index: 98;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
   user-select: none;
   transform: translateX(100%);
   transition: 500ms all;
 }
+
 #menuItems.open {
   transform: translateX(0);
 }
+
 #menuItems a {
   background-color: transparent;
   font-size: 43px;
   padding: 0px;
   display: block;
 }
+
 #menuItems .container {
   position: absolute;
   left: calc(7vw + 60px);
@@ -196,10 +213,12 @@ footer .img.de {
   transform: translateY(-50%);
   width: min-content;
 }
+
 #menuItems .square {
   position: absolute;
   z-index: -20;
 }
+
 #menuItems .square.a {
   z-index: -1;
   width: 47vw;
@@ -209,6 +228,7 @@ footer .img.de {
   left: 7vw;
   top: 20vh;
 }
+
 #menuItems .square.b {
   width: 45vw;
   min-width: calc(460px + 6vw);
@@ -217,6 +237,7 @@ footer .img.de {
   left: 40vw;
   top: 40vh;
 }
+
 .hiddenLink {
   text-decoration: none;
   background-color: transparent;
@@ -224,24 +245,30 @@ footer .img.de {
   margin: 0px;
   color: black;
 }
+
 h1 {
   font-size: 40px;
   font-weight: 100;
 }
+
 header a {
   background-color: transparent;
   padding: 0px;
   margin: 0px;
 }
+
 #logo.hu {
   background-image: url(images/logo.png);
 }
+
 #logo.en {
   background-image: url(images/logo.en.png);
 }
+
 #logo.de {
   background-image: url(images/logo.de.png);
 }
+
 #logo {
   height: 162px;
   width: 236px;
@@ -251,14 +278,20 @@ header a {
   background-size: cover;
   margin: 3.5em 0px 5em 5vw;
 }
+
+#menuLanguages {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   #menuItems {
     transform: translateX(200%);
   }
+
   #logo {
     background-image: url(images/logo.mobile.png) !important;
-    width: 95vw;
-    height: 46vw;
+    width: 95vw !important;
+    height: 30vw !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -266,24 +299,59 @@ header a {
     left: 50%;
     position: fixed;
     z-index: 99;
-    top: -40px;
+    top: 0px;
+    margin: auto !important;
   }
+
   section {
     margin-bottom: 15em;
   }
+
   .title {
     font-size: 15px;
   }
+
   footer .img {
     width: 40vw;
     aspect-ratio: 1/0.69;
     height: auto !important;
     transform: translateY(-25%) !important;
   }
+
   footer p.title {
     font-size: 14px !important;
   }
+
   footer a {
     font-size: 10px !important;
+  }
+
+  #menu {
+    top: 13vw !important;
+    z-index: 1000;
+  }
+
+  #languages {
+    display: none;
+  }
+
+  #menuItems a {
+    font-size: 7vw;
+  }
+
+  #menuLanguages {
+    display: block;
+    position: absolute;
+    top: 170px;
+    z-index: 99;
+    position: fixed;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    left: 10vw;
+  }
+
+  h1 {
+    font-size: 28px;
   }
 }

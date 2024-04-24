@@ -1,7 +1,8 @@
-h2{
+h2 {
     font-size: 22px;
 }
-.card{
+
+.card {
     position: relative;
     padding: 55px 20px 15px 20px;
     width: calc(80vw - 40px);
@@ -9,7 +10,8 @@ h2{
     background-color: #CCDAD1;
     height: 400px;
 }
-.card .img{
+
+.card .img {
     width: 45%;
     height: 300px;
     background-position: center;
@@ -19,17 +21,34 @@ h2{
     top: 75px;
     right: 52%;
 }
-.card a{
+
+.card a {
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
     bottom: 10px;
 }
-.card p, .card h2{
+
+.card p,
+.card h2 {
     width: 40%;
     margin-left: 50%;
 }
-.intro h1, .intro p{
+
+.intro h1,
+.intro p {
     width: 80vw;
     margin-left: 10vw;
+}
+@media screen and (max-width: 600px) {
+    section{
+        margin-top: 150px !important;
+    }
+    .into h1{
+        margin-left: 1em !important;
+    }
+    .intro p{
+        font-size: 11px;
+    }
+    
 }
