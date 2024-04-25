@@ -40,15 +40,44 @@ h2 {
     width: 80vw;
     margin-left: 10vw;
 }
+
 @media screen and (max-width: 600px) {
-    section{
+    section {
         margin-top: 150px !important;
     }
-    .into h1{
+
+    .into h1 {
         margin-left: 1em !important;
     }
-    .intro p{
+
+    .intro p {
         font-size: 11px;
     }
-    
+
+    .serviceCards .card .img {
+        height: 180px !important;
+        top: 53px;
+    }
+
+    .serviceCards .card h2 {
+        font-size: 15px;
+        margin-left: 10px;
+        width: fit-content;
+    }
+
+    .serviceCards .card .grey {
+        font-size: 11px;
+    }
+
+    .serviceCards .card {
+        padding: 5px 5px 10px 5px !important;
+        width: calc(90vw) !important;
+        margin: 1.5em auto;
+        height: 280px !important;
+    }
+    .serviceCards .card a{
+        font-size: 12px;
+        padding: 8px 15px 8px 15px;
+    }
+
 }

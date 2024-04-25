@@ -336,7 +336,7 @@ header a {
   }
 
   #menuItems a {
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 
   #menuLanguages {
@@ -351,7 +351,11 @@ header a {
     left: 10vw;
   }
 
+
   h1 {
     font-size: 28px;
   }
+}
+hr{
+  border: white 1px solid;
 }
