@@ -1,10 +1,11 @@
-#why-us ul {
-  width: 450px;
+#why-us {
+  width: 60vw;
   margin: auto;
   background-color: #9caea9;
   padding: 10px 40px 20px 40px;
-  font-size: 26px;
+  font-size: 20px;
 }
+
 #contactsLink {
   width: 150px;
   text-align: center;
@@ -12,6 +13,7 @@
   margin-left: 22.5vw;
   margin-top: 3em;
 }
+
 #why-us a {
   padding: 10px 100px 10px 100px;
   width: fit-content;
@@ -19,9 +21,11 @@
   display: block;
   margin-top: 3em;
 }
+
 #valinor-card {
   width: 75vw;
   margin: auto;
+  margin-bottom: 30vh;
 }
 
 #valinor-card .card {
@@ -33,6 +37,7 @@
   background-size: contain;
   margin-bottom: 5em;
 }
+
 #works {
   overflow-x: scroll;
   display: flex;
@@ -66,14 +71,16 @@
   margin: auto;
   margin-top: 15px;
 }
+
 #references {
   position: relative;
 }
+
 #references a {
-  width: fit-content;
+  width: max-content;
   margin: auto;
   display: block;
-  margin-top: 3em;
+  margin-top: 50%;
 }
 
 #services .service {
@@ -90,19 +97,23 @@
 #services .service p {
   margin-left: 30px;
 }
+
 #services .service .grey {
   width: 65%;
   font-size: 16px;
 }
+
 #servicesCards .white {
   margin-left: calc(15vw - 20px);
 }
+
 #services .service a {
   font-size: 13px;
   right: 60px;
   position: absolute;
   bottom: 10px;
 }
+
 #services .img {
   max-width: 355px;
   width: 25vw;
@@ -114,6 +125,7 @@
   right: -3px;
   bottom: 0px;
 }
+
 #logo {
   width: 55vw;
   height: 46vw;
@@ -122,28 +134,35 @@
   background-size: contain;
   margin: auto;
 }
+
 @media screen and (max-width: 600px) {
   #services .service .grey {
     font-size: 10px !important;
   }
+
   #services .service p {
     margin-left: 5px !important;
   }
+
   #services .img {
     max-width: 155px;
     width: 30vw !important;
     height: 220px !important;
   }
+
   #services .service a {
     font-size: 11px !important;
     left: 0px !important;
     width: 70px;
     text-align: center;
   }
+
   #intro-paragraph {
     margin-top: 30em;
     width: 85vw;
+    font-size: 16px;
   }
+
   #valinor-card .card {
     position: absolute;
     top: 15em;
@@ -151,28 +170,54 @@
     left: 50%;
     width: 90vw !important;
   }
+
   #contactsLink {
     width: 50vw;
     text-align: center;
     display: block !important;
     margin: auto !important;
     margin-top: 3em !important;
+    font-size: 14px !important;
   }
-  #why-us ul {
-    width: 70vw !important;
-  }
+
   #why-us p {
-    font-size: 17px;
-  }
-  #why-us li {
     font-size: 14px;
   }
-  #valinor-card p {
-    font-size: 15px;
+
+  #why-us a{
+    font-size: 14px;
+    width: 50vw !important;
+    margin: auto;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
   }
+
   #servicesCards .service {
     padding: 10px !important;
     width: 85vw !important;
     height: 200px !important;
   }
+  a.more{
+    font-size: 14px;
+  }
+  #moreworks a{
+    font-size: 14px;
+    transform: translateY(50%);
+  }
+}
+
+#serverromReference {
+  color: #6f6866 !important;
+  text-decoration: underline !important;
+  font-family: Ledger !important;
+  padding: 0px;
+  background-color: transparent !important;
+  font-size: 16px !important;
+  position: relative !important;
+  right: 0px !important;
+  bottom: 0px !important;
+}
+#moreworks{
+  height: 291px;
+  padding-right: 20px;
 }

@@ -359,3 +359,6 @@ header a {
 hr{
   border: white 1px solid;
 }
+.large{
+  font-size: 23px;
+}

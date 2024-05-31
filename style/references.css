@@ -14,10 +14,10 @@ h1{
     padding: 20px;
 }
 .card:nth-child(odd){
-    margin-left: 55vw;
+    margin-left: 45vw;
 }
 .card:nth-child(even){
-    margin-left: 5vw;
+    margin-left: 15vw;
 }
 .card .container{
     display: flex;
