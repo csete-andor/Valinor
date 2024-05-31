@@ -282,6 +282,63 @@ header a {
 #menuLanguages {
   display: none;
 }
+hr{
+  border: white 1px solid;
+}
+.large{
+  font-size: 23px;
+}
+
+#cookies{
+  width: 100%;
+  padding: 30px;
+  background-color: #9caea9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  animation: showPopup 1.3s 1;
+}
+
+
+#cookies a{
+  color: #1e1e1e;
+  text-decoration: underline;
+  font-family: Ledger;
+  padding: 0;
+  background-color: transparent;
+  font-size: 16px;
+}
+#cookies button{
+  color: #1e1e1e;
+  outline: none;
+  border: none;
+  background-color: #dffae8;
+  font-family: Ledger;
+  position: absolute;
+  right: 90px;
+  padding: 10px 15px 10px 15px;
+  transform: translateY(-10px);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@keyframes hidePopup {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+@keyframes showPopup {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 
 @media screen and (max-width: 600px) {
   #menuItems {
@@ -355,10 +412,4 @@ header a {
   h1 {
     font-size: 28px;
   }
-}
-hr{
-  border: white 1px solid;
-}
-.large{
-  font-size: 23px;
 }

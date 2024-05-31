@@ -1,0 +1,56 @@
+body {
+    font-family: Ledger !important;
+    color: white;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-family: Krona One;
+    padding: 10px 35px 10px 35px;
+    background-color: #dffae8;
+    font-size: 18px;
+    display: block;
+    width: fit-content;
+    margin: unset;
+}
+
+#backtohome {
+    font-family: Krona One;
+    background-color: #9caea9;
+    width: 8vw;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 3em;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    a {
+        font-size: 14px
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    #backtohome {
+        font-size: 13px;
+        width:80vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    main{
+        margin-top: 6em;
+    }
+}
