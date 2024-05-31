@@ -30,6 +30,10 @@ h1{
 .card .after, .card .before{
     width: 50%;
 }
+.card .middle{
+    margin: auto;
+    width: 70%;
+}
 .card .img{
     max-width: 280px;
     width: 100%;
