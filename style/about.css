@@ -33,19 +33,19 @@ section.diagnal:nth-child(odd) {
 }
 
 .rects.a {
-    background-image: url(../images/about/1.png);
+    background-image: url(/images/about/1.png);
     right: 17vw;
     top: 5em;
 }
 
 .rects.b {
-    background-image: url(../images/about/2.png);
+    background-image: url(/images/about/2.png);
     right: 33vw;
     top: 5em;
 }
 
 .rects.c {
-    background-image: url(../images/about/3.png);
+    background-image: url(/images/about/3.png);
     right: 17vw;
     top: 5em;
 }

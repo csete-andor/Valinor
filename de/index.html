@@ -5,38 +5,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valninor - Die Bauexperte</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/style/index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ledger&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="../images/icon.png" />
-  <script src="../script/app.js" defer></script>
-  <script src="../script/menu.js" defer></script>
-  <script src="script/cookie.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="/images/icon.png" />
+  <script src="/script/app.js" defer></script>
+  <script src="/script/menu.js" defer></script>
+  <script src="/script/cookie.js" defer></script>
 </head>
 
 <body>
   <article>
     <header>
       <div id="languages">
-        <a href="../en/">
+        <a href="/en/">
           <div class="en language"></div>
         </a>
-        <a href="../">
+        <a href="/">
           <div class="hu language"></div>
         </a>
       </div>
       <div id="menu"></div>
       <div id="menuItems">
         <div id="menuLanguages">
-          <a href="../en/">
+          <a href="/en/">
             <div class="en language"></div>
           </a>
-          <a href="../">
+          <a href="/">
             <div class="hu language"></div>
           </a>
         </div>
         <div class="container">
-          <a tabindex="-1" class="white krona" href="../de/">Startseite</a>
+          <a tabindex="-1" class="white krona" href="/de/">Startseite</a>
           <a tabindex="-1" class="white krona" href="about.html">Über uns</a>
           <a tabindex="-1" class="white krona" href="services.html">Dienstleistungen</a>
           <a tabindex="-1" class="white krona" href="references.html">Referenzen</a>
@@ -47,7 +47,7 @@
       </div>
     </header>
     <div id="cookies">
-      Die Website sammelt Ihre Daten nicht und verwendet keine Cookies. <a href="cookie.html">Mehr Informationen</a>
+      <p>Die Website sammelt Ihre Daten nicht und verwendet keine Cookies. <a href="cookie.html">Mehr Informationen</a></p>
       <button onclick="hideCookiePopup()">schließen</button>
     </div>
     <main>
@@ -68,13 +68,13 @@
               Vom Entwurf von Büroumgebungen bis zum Anstreichen großer
               Industriehallen.
             </p>
-            <div class="img" style="background-image: url(../images/services/painting.png)"></div>
+            <div class="img" style="background-image: url(/images/services/painting.png)"></div>
             <a href="services.html">Interessiert</a>
           </div>
           <div class="service hidden">
             <p class="krona title">Fliesenlegen</p>
             <p class="grey">Kaltes und warmes Fliesenlegen.</p>
-            <div class="img" style="background-image: url(../images/services/tiling.png)"></div>
+            <div class="img" style="background-image: url(/images/services/tiling.png)"></div>
             <a href="services.html">Interessiert</a>
           </div>
           <div class="service hidden">
@@ -82,7 +82,7 @@
             <p class="grey">
               Von kleinen Reparaturen bis zur Gestaltung komplexer Systeme.
             </p>
-            <div class="img" style="background-image: url(../images/services/electrical.png)"></div>
+            <div class="img" style="background-image: url(/images/services/electrical.png)"></div>
             <a href="services.html">Interessiert</a>
           </div>
           <div class="service hidden">
@@ -92,7 +92,7 @@
               <a id="serverromReference" href="references.html#serverromReference">Serverräumen</a>) nach individuellen
               Bedürfnissen.
             </p>
-            <div class="img" style="background-image: url(../images/services/drywall.png)"></div>
+            <div class="img" style="background-image: url(/images/services/drywall.png)"></div>
             <a href="services.html">Interessiert</a>
           </div>
           <div class="service hidden">
@@ -100,7 +100,7 @@
             <p class="grey">
               Von der Erneuerung von Möbelelementen bis hin zu kompletten Innenarchitekturlösungen.
             </p>
-            <div class="img" style="background-image: url(../images/services/carpentry.png)"></div>
+            <div class="img" style="background-image: url(/images/services/carpentry.png)"></div>
             <a href="services.html">Interessiert</a>
           </div>
         </div>
@@ -113,15 +113,15 @@
         <div id="works">
           <div class="cards">
             <p class="krona">Wandkonstruktion für Serverräume</p>
-            <div class="img" style="background-image: url(../images/serverrom.png)"></div>
+            <div class="img" style="background-image: url(/images/serverrom.png)"></div>
           </div>
           <div class="cards">
             <p class="krona">Kanalabdeckung</p>
-            <div class="img" style="background-image: url(../images/manhole.png)"></div>
+            <div class="img" style="background-image: url(/images/manhole.png)"></div>
           </div>
           <div class="cards">
             <p class="krona">Bürorenovierung</p>
-            <div class="img" style="background-image: url(../images/office.png)"></div>
+            <div class="img" style="background-image: url(/images/office.png)"></div>
           </div>
           <div id="moreworks">
             <a href="references.html">Unsere weiteren Arbeiten</a>
@@ -147,9 +147,10 @@
       <p class="title white krona">Valinor GmbH</p>
       <a target="_blank" href="mailto:info@valinor.hu" class="white">info@valinor.hu</a><br />
       <a target="_blank" href="tel:+36304442663" class="white">+36 30 444 2663</a>
-      <a href="../de/">
+      <a href="/de/">
         <div class="img de"></div>
       </a>
+      <p id="credits">Die Website wurde von <a href="https://cseteandor.hu">Andor Csete</a> erstellt</p>
     </footer>
   </article>
 </body>

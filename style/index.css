@@ -31,7 +31,7 @@
 #valinor-card .card {
   width: 100%;
   aspect-ratio: 1.61/1;
-  background-image: url(../images/valinor-card.png);
+  background-image: url(/images/valinor-card.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

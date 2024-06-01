@@ -39,7 +39,7 @@ h1{
     width: 100%;
     margin: auto;
     height: 373px;
-    background-image: url(../images/references/office.after.png);
+    background-image: url(/images/references/office.after.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
