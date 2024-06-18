@@ -41,6 +41,17 @@ h2 {
     margin-left: 10vw;
 }
 
+.serviceCards{
+    position: relative;
+}
+
+#contactLink {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 @media screen and (max-width: 600px) {
     section {
         margin-top: 150px !important;
@@ -73,9 +84,10 @@ h2 {
         padding: 5px 5px 10px 5px !important;
         width: calc(90vw) !important;
         margin: 1.5em auto;
-        height: 280px !important;
+        height: 250px !important;
     }
-    .serviceCards .card a{
+
+    .serviceCards .card a {
         font-size: 12px;
         padding: 8px 15px 8px 15px;
     }
