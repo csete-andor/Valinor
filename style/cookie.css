@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    width: 80vw;
+    width: 70vw;
     margin: auto;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -33,6 +33,13 @@ a {
     left: 10px;
     color: white;
     font-size: 14px;
+}
+
+#credits a{
+    text-decoration: underline;
+    padding: unset;
+    background-color: transparent;
+    width: unset;
 }
 
 @media screen and (max-width: 600px) {
