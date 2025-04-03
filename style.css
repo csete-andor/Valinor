@@ -360,7 +360,51 @@ hr {
   font-size: 15px;
 }
 
+#partner-card{
+  width: 80vw;
+  background-color: #788585;
+  margin: auto;
+  margin-top: 6em;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  font-size: calc(1vw + 7px);
+  font-family: Krona One ;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+#partner-card > .logo{
+  display: grid;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+#partner-card >.logo> .img-container{
+  display: flex;
+  width: 30%;
+}
+#partner-card > .logo > .img-container > img{
+  height: 5vw;
+  align-self: center;
+}
+#partner-card > .logo > span{
+  width: 100%;
+  margin: auto;
+  display: block;
+  grid-row: 2;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#partner-card > .logo > span > a{
+  background-color: transparent;
+  color: white;
+  font-size: calc(1vw + 7px);
+}
+
 @media screen and (max-width: 600px) {
+  
   #menuItems {
     transform: translateX(200%);
   }
@@ -459,4 +503,28 @@ hr {
   #credits a{
     font-size: 13px !important;
   }
+
+  #partner-card{
+    margin-top: 2em;
+    display: grid;
+    font-size: 13px;
+    padding-bottom: 2.2em;
+    padding-top: 0em;
+  }
+  #partner-card >.logo> .img-container{
+    display: flex;
+    width: auto;
+    margin: auto;
+  }
+  #partner-card > .logo > .img-container > img{
+    width: 40vw;
+    height: auto;
+    margin: auto;
+    margin-top: 2em;
+  }
+  #partner-card > .logo > span{
+    margin-top: .7em;
+  }
+  
 }
+
