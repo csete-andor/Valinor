@@ -22,22 +22,6 @@
   margin-top: 3em;
 }
 
-#valinor-card {
-  width: 75vw;
-  margin: auto;
-  margin-bottom: 30vh;
-}
-
-#valinor-card .card {
-  width: 100%;
-  aspect-ratio: 1.61/1;
-  background-image: url(/images/valinor-card.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 5em;
-}
-
 #works {
   overflow-x: scroll;
   display: flex;

@@ -1,93 +1,94 @@
-h2{
-    font-size: 22px;
-    font-family: Krona One;
+h2 {
+  font-size: 22px;
+  font-family: Krona One;
 }
-h1{
-    margin-left: 10vw;
+h1 {
+  margin-left: 10vw;
 }
-.card{
-    width: calc(40vw - 40px);
-    height: 460px;
-    background-color: #CCDAD1;
-    margin-bottom: 5em;
-    position: relative;
-    padding: 20px;
+.card {
+  width: calc(40vw - 40px);
+  height: 460px;
+  background-color: #ccdad1;
+  margin-bottom: 5em;
+  position: relative;
+  padding: 20px;
 }
-.card:nth-child(odd){
-    margin-left: 45vw;
+.card:nth-child(odd) {
+  margin-left: 45vw;
 }
-.card:nth-child(even){
-    margin-left: 15vw;
+.card:nth-child(even) {
+  margin-left: 15vw;
 }
-.card .container{
-    display: flex;
-    flex-direction: row;
+.card .container {
+  display: flex;
+  flex-direction: row;
 }
-.splitter{
-    min-width: 20px;
-    width: 5%;
+.splitter {
+  min-width: 20px;
+  width: 5%;
 }
-.card .after, .card .before{
-    width: 50%;
+.card .after,
+.card .before {
+  width: 50%;
 }
-.card .middle{
-    margin: auto;
-    width: 70%;
+.card .middle {
+  margin: auto;
+  width: 70%;
 }
-.card .img{
-    max-width: 280px;
-    width: 100%;
-    margin: auto;
-    height: 373px;
-    background-image: url(/images/references/office.after.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.card .img {
+  max-width: 280px;
+  width: 100%;
+  margin: auto;
+  height: 373px;
+  background-image: url(/images/references/office.after.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.card span{
-    display: block;
-    max-width: 260px;
-    width: calc(100% - 20px);
-    margin: auto;
-    transform: translateY(-100%);
-    padding: 10px;
-    background-color: rgba(30, 30, 30, 0.7);
-    color: white;
-    font-family: Krona One;
+.card span {
+  display: block;
+  max-width: 260px;
+  width: calc(100% - 20px);
+  margin: auto;
+  transform: translateY(-100%);
+  padding: 10px;
+  background-color: rgba(30, 30, 30, 0.7);
+  color: white;
+  font-family: Krona One;
 }
-.before span{
-    text-align: right;
+.before span {
+  text-align: right;
 }
-svg{
-    width: 200vw;
-    height: 200vh;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: -99;
-    opacity: 20%;
-    transform: translate(-50%, -50%);
+svg {
+  width: 200vw;
+  height: 200vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -99;
+  opacity: 20%;
+  transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 600px){
-    section{
-        margin-top: 150px !important;
-    }
-    .serviceCards .card{
-        margin: auto !important;
-        width: 80vw !important;
-        height: fit-content;
-        margin-bottom: 50px !important;
-    }
-    .serviceCards .card .img{
-        height: 200px !important;
-    }
-    h2{
-        font-size: 15px;
-    }
-    .container span{
-        font-size: 11px;
-    }
-    .serviceCards{
-        margin-top: 50px !important;
-    }
+@media screen and (max-width: 600px) {
+  section {
+    margin-top: 150px !important;
+  }
+  .serviceCards .card {
+    margin: auto !important;
+    width: 80vw !important;
+    height: fit-content;
+    margin-bottom: 50px !important;
+  }
+  .serviceCards .card .img {
+    height: 200px !important;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .container span {
+    font-size: 11px;
+  }
+  .serviceCards {
+    margin-top: 50px !important;
+  }
 }
