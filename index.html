@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valinor - Építőipari szakértő</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ledger&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/icon.png" />
+    <script src="script/app.js" defer></script>
+    <script src="script/menu.js" defer></script>
+    <script src="script/cookie.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valinor - Építőipari szakértő</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style/index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ledger&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="images/icon.png" />
-  <script src="script/app.js" defer></script>
-  <script src="script/menu.js" defer></script>
-  <script src="script/cookie.js" defer></script>
-</head>
-
-<body>
-  <article>
-    <header>
-      <div id="languages">
-        <a href="en/">
-          <div class="en language"></div>
-        </a>
-        <a href="de/">
-          <div class="de language"></div>
-        </a>
-      </div>
-      <div id="menu"></div>
-      <div id="menuItems">
-        <div id="menuLanguages">
+  <body>
+    <article>
+      <header>
+        <div id="languages">
           <a href="en/">
             <div class="en language"></div>
           </a>
@@ -35,138 +27,217 @@
             <div class="de language"></div>
           </a>
         </div>
-        <div class="container">
-          <a tabindex="-1" class="white krona" href="/">Kezdőlap</a>
-          <a tabindex="-1" class="white krona" href="about.html">Rólunk</a>
-          <a tabindex="-1" class="white krona" href="services.html">Szolgáltatások</a>
-          <a tabindex="-1" class="white krona" href="references.html">Referenciák</a>
-          <a tabindex="-1" class="white krona" href="contacts.html">Kapcsolat</a>
+        <div id="menu"></div>
+        <div id="menuItems">
+          <div id="menuLanguages">
+            <a href="en/">
+              <div class="en language"></div>
+            </a>
+            <a href="de/">
+              <div class="de language"></div>
+            </a>
+          </div>
+          <div class="container">
+            <a tabindex="-1" class="white krona" href="/">Kezdőlap</a>
+            <a tabindex="-1" class="white krona" href="about.html">Rólunk</a>
+            <a tabindex="-1" class="white krona" href="services.html"
+              >Szolgáltatások</a
+            >
+            <a tabindex="-1" class="white krona" href="references.html"
+              >Referenciák</a
+            >
+            <a tabindex="-1" class="white krona" href="contacts.html"
+              >Kapcsolat</a
+            >
+          </div>
+          <div class="square a"></div>
+          <div class="square b"></div>
         </div>
-        <div class="square a"></div>
-        <div class="square b"></div>
+      </header>
+      <div id="cookies">
+        <p>
+          Az oldal nem gyűjti adatait, és nem használ sütiket.
+          <a href="cookie.html">További információ</a>
+        </p>
+        <button onclick="hideCookiePopup()">bezárás</button>
       </div>
-    </header>
-    <div id="cookies">
-      <p>Az oldal nem gyűjti adatait, és nem használ sütiket. <a href="cookie.html">További információ</a></p>
-      <button onclick="hideCookiePopup()">bezárás</button>
-    </div>
-    <main>
-      <section>
-        <div id="logo" class="hu"></div>
-        <p class="white large" id="intro-paragraph">
-          Építőipari generálkivitelező vállalkozás vagyunk ipari ügyfelekre
-          szakosodva.
-        </p>
-        <a href="contacts.html" id="contactsLink">Kapcsolat</a>
-      </section>
-      <section id="servicesCards">
-        <p class="krona white title">Szolgáltatásaink</p>
-        <div id="services">
-          <div class="service hidden">
-            <p class="krona title">Festés, tapétázás</p>
-            <p class="grey">
-              Irodai környezet kialakításától a nagy felületű ipari csarnokok
-              festéséig.
-            </p>
-            <div class="img" style="background-image: url(images/services/painting.png)"></div>
+      <main>
+        <section>
+          <div id="logo" class="hu"></div>
+          <p class="white large" id="intro-paragraph">
+            Építőipari generálkivitelező vállalkozás vagyunk ipari ügyfelekre
+            szakosodva.
+          </p>
+          <a href="contacts.html" id="contactsLink">Kapcsolat</a>
+        </section>
+        <section id="servicesCards">
+          <p class="krona white title">Szolgáltatásaink</p>
+          <div id="services">
+            <div class="service hidden">
+              <p class="krona title">Festés, tapétázás</p>
+              <p class="grey">
+                Irodai környezet kialakításától a nagy felületű ipari csarnokok
+                festéséig.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/painting.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Burkolás</p>
+              <p class="grey">Hideg és meleg burkolás.</p>
+              <div
+                class="img"
+                style="background-image: url(images/services/tiling.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Villamossági munkák</p>
+              <p class="grey">
+                Kisebb hibajavítástól a komplex rendszerek kialakításáig.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/electrical.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Gipszkarton falépítés</p>
+              <p class="grey">
+                Egyedi igények szerint irodák, kiemelt területek (pl.
+                <a
+                  id="serverromReference"
+                  href="references.html#serverromReference"
+                  >szerverterem</a
+                >
+                ) kialakítása
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/drywall.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Asztalosmunkák</p>
+              <p class="grey">
+                Bútorelemek cseréjétől kezdve teljes belsőépítészeti
+                megoldásokig.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(images/services/carpentry.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p style="width: 70%;" class="krona title">Jogszabályi megfelelőségi vizsgálatok</p>
+              <p class="grey">
+                Jogszabályi megfelelőségi vizsgálatok építési projektekhez.
+                Előírások, engedélyek, dokumentáció – biztosítjuk a teljes körű
+                megfelelést.
+              </p>
+              <div
+                class="img"
+                style="
+                  background-image: url(images/services/legal_inspection.png);
+                "
+              ></div>
+            </div>
           </div>
-          <div class="service hidden">
-            <p class="krona title">Burkolás</p>
-            <p class="grey">Hideg és meleg burkolás.</p>
-            <div class="img" style="background-image: url(images/services/tiling.png)"></div>
+          <a href="services.html" class="more">Bővebben</a>
+        </section>
+        <section id="references">
+          <p class="white krona title" style="margin-left: 12.5vw">
+            Néhány korábbi munkánk
+          </p>
+          <div id="works">
+            <div class="cards">
+              <p class="krona">Falépítés</p>
+              <div
+                class="img"
+                style="background-image: url(images/falepites.png)"
+              ></div>
+            </div>
+            <div class="cards">
+              <p class="krona">Irodafelújítás</p>
+              <div
+                class="img"
+                style="background-image: url(images/irodafelujitas.png)"
+              ></div>
+            </div>
+            <div class="cards">
+              <p class="krona">Irodafelújítás</p>
+              <div
+                class="img"
+                style="background-image: url(images/irodafelujitas2.png)"
+              ></div>
+            </div>
+            <div id="moreworks">
+              <a href="references.html">További munkáink</a>
+            </div>
           </div>
-          <div class="service hidden">
-            <p class="krona title">Villamossági munkák</p>
-            <p class="grey">
-              Kisebb hibajavítástól a komplex rendszerek kialakításáig.
-            </p>
-            <div class="img" style="background-image: url(images/services/electrical.png)"></div>
-          </div>
-          <div class="service hidden">
-            <p class="krona title">Gipszkarton falépítés</p>
-            <p class="grey">
-              Egyedi igények szerint irodák, kiemelt területek (pl.
-              <a id="serverromReference" href="references.html#serverromReference">szerverterem</a>
-              ) kialakítása
-            </p>
-            <div class="img" style="background-image: url(images/services/drywall.png)"></div>
-          </div>
-          <div class="service hidden">
-            <p class="krona title">Asztalosmunkák</p>
-            <p class="grey">
-              Bútorelemek cseréjétől kezdve teljes belsőépítészeti
-              megoldásokig.
-            </p>
-            <div class="img" style="background-image: url(images/services/carpentry.png)"></div>
-          </div>
-        </div>
-        <a href="services.html" class="more">Bővebben</a>
-      </section>
-      <section id="references">
-        <p class="white krona title" style="margin-left: 12.5vw">
-          Néhány korábbi munkánk
-        </p>
-        <div id="works">
-          <div class="cards">
-            <p class="krona">Falépítés</p>
-            <div class="img" style="background-image: url(images/falepites.png)"></div>
-          </div>
-          <div class="cards">
-            <p class="krona">Irodafelújítás</p>
-            <div class="img" style="background-image: url(images/irodafelujitas.png)"></div>
-          </div>
-          <div class="cards">
-            <p class="krona">Irodafelújítás</p>
-            <div class="img" style="background-image: url(images/irodafelujitas2.png)"></div>
-          </div>
-          <div id="moreworks">
-            <a href="references.html">További munkáink</a>
-          </div>
-        </div>
-      </section>
-      <section>
-        <p class="white krona title" style="margin-left: 12.5vw">
-          Partnereink:
-        </p>
+        </section>
+        <section>
+          <p class="white krona title" style="margin-left: 12.5vw">
+            Partnereink:
+          </p>
           <div id="partner-card">
             <div class="logo">
-              <div class="img-container"><img src="/images/partners/dana.png" alt="Dana logó"></div>
+              <div class="img-container">
+                <img src="/images/partners/dana.png" alt="Dana logó" />
+              </div>
               <span><a href="https://www.dana.com">Dana</a></span>
             </div>
             <div class="logo">
-              <div class="img-container"><img style="@media screen and (max-width: 600px) {width: 50vw;}" src="/images/partners/audi.png" alt="Audi logó"></div>
+              <div class="img-container">
+                <img
+                  style="@media screen and (max-width: 600px) {width: 50vw}"
+                  src="/images/partners/audi.png"
+                  alt="Audi logó"
+                />
+              </div>
               <span><a href="https://audi.hu/hu/">Audi</a></span>
             </div>
             <div class="logo">
-              <div class="img-container"><img style="@media screen and (max-width: 600px) {width: 50vw;}" src="/images/partners/melecs.svg" alt="Melecs logó"></div>
+              <div class="img-container">
+                <img
+                  style="@media screen and (max-width: 600px) {width: 50vw}"
+                  src="/images/partners/melecs.svg"
+                  alt="Melecs logó"
+                />
+              </div>
               <span><a href="https://www.melecs.com/hu">Melecs</a></span>
             </div>
           </div>
-        
-      </section>
-      <section>
-        <div id="why-us">
-          <p class="krona white">Miért válasszon minket?</p>
-          <p>
-            Versenyelőnyünk, hogy a nagyobb cégekkel ellentétben a kisebb
-            munkákat is magas szakértelemmel és minőségben látjuk el.
-            Kollégáink készséggel állnak rendelkezésére az alábbi
-            elérhetőségeinken.
-          </p>
-          <a href="contacts.html">Kapcsolat</a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p class="title white krona">Valinor Kft.</p>
-      <a target="_blank" href="mailto:info@valinor.hu" class="white">info@valinor.hu</a><br />
-      <a target="_blank" href="tel:+36304442663" class="white">+36 30 444 2663</a>
-      <a href="/">
-        <div class="img hu"></div>
-      </a>
-      <p id="credits">A weboldalt <a href="https://cseteandor.hu">Csete Andor</a> készítette</p>
-    </footer>
-  </article>
-</body>
-
+        </section>
+        <section>
+          <div id="why-us">
+            <p class="krona white">Miért válasszon minket?</p>
+            <p>
+              Versenyelőnyünk, hogy a nagyobb cégekkel ellentétben a kisebb
+              munkákat is magas szakértelemmel és minőségben látjuk el.
+              Kollégáink készséggel állnak rendelkezésére az alábbi
+              elérhetőségeinken.
+            </p>
+            <a href="contacts.html">Kapcsolat</a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p class="title white krona">Valinor Kft.</p>
+        <a target="_blank" href="mailto:info@valinor.hu" class="white"
+          >info@valinor.hu</a
+        ><br />
+        <a target="_blank" href="tel:+36304442663" class="white"
+          >+36 30 444 2663</a
+        >
+        <a href="/">
+          <div class="img hu"></div>
+        </a>
+        <p id="credits">
+          A weboldalt <a href="https://cseteandor.hu">Csete Andor</a> készítette
+        </p>
+      </footer>
+    </article>
+  </body>
 </html>

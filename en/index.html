@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valinor - Construction industry expert</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ledger&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/icon.png" />
+    <script src="/script/app.js" defer></script>
+    <script src="/script/menu.js" defer></script>
+    <script src="/script/cookie.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valinor - Construction industry expert</title>
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="/style/index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ledger&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="/images/icon.png" />
-  <script src="/script/app.js" defer></script>
-  <script src="/script/menu.js" defer></script>  
-  <script src="/script/cookie.js" defer></script>
-</head>
-
-<body>
-  <article>
-    <header>
-      <div id="languages">
-        <a href="/">
-          <div class="hu language"></div>
-        </a>
-        <a href="/de/">
-          <div class="de language"></div>
-        </a>
-      </div>
-      <div id="menu"></div>
-      <div id="menuItems">
-        <div id="menuLanguages">
+  <body>
+    <article>
+      <header>
+        <div id="languages">
           <a href="/">
             <div class="hu language"></div>
           </a>
@@ -35,134 +27,218 @@
             <div class="de language"></div>
           </a>
         </div>
-        <div class="container">
-          <a tabindex="-1" class="white krona" href="/en/">Home</a>
-          <a tabindex="-1" class="white krona" href="about.html">About us</a>
-          <a tabindex="-1" class="white krona" href="services.html">Services</a>
-          <a tabindex="-1" class="white krona" href="references.html">References</a>
-          <a tabindex="-1" class="white krona" href="contacts.html">Contacts</a>
+        <div id="menu"></div>
+        <div id="menuItems">
+          <div id="menuLanguages">
+            <a href="/">
+              <div class="hu language"></div>
+            </a>
+            <a href="/de/">
+              <div class="de language"></div>
+            </a>
+          </div>
+          <div class="container">
+            <a tabindex="-1" class="white krona" href="/en/">Home</a>
+            <a tabindex="-1" class="white krona" href="about.html">About us</a>
+            <a tabindex="-1" class="white krona" href="services.html"
+              >Services</a
+            >
+            <a tabindex="-1" class="white krona" href="references.html"
+              >References</a
+            >
+            <a tabindex="-1" class="white krona" href="contacts.html"
+              >Contacts</a
+            >
+          </div>
+          <div class="square a"></div>
+          <div class="square b"></div>
         </div>
-        <div class="square a"></div>
-        <div class="square b"></div>
+      </header>
+      <div id="cookies">
+        <p>
+          The site does not collect your data and does not use cookies.
+          <a href="cookie.html">More information</a>
+        </p>
+        <button onclick="hideCookiePopup()">close</button>
       </div>
-    </header>
-    <div id="cookies">
-      <p>The site does not collect your data and does not use cookies. <a href="cookie.html">More information</a></p>
-      <button onclick="hideCookiePopup()">close</button>
-    </div>
-    <main>
-      <section>
-        <div id="logo" class="en"></div>
-        <p class="white large" id="intro-paragraph">
-          We are a construction general contractor company specializing in
-          industrial clients.
-        </p>
-        <a href="contacts.html" id="contactsLink">Contacts</a>
-      </section>
-      <section id="servicesCards">
-        <p class="krona white title">Services</p>
-        <div id="services">
-          <div class="service hidden">
-            <p class="krona title">Painting, wallpapering</p>
-            <p class="grey">
-              From designing office environments to painting large industrial halls.
-            </p>
-            <div class="img" style="background-image: url(/images/services/painting.png)"></div>
+      <main>
+        <section>
+          <div id="logo" class="en"></div>
+          <p class="white large" id="intro-paragraph">
+            We are a construction general contractor company specializing in
+            industrial clients.
+          </p>
+          <a href="contacts.html" id="contactsLink">Contacts</a>
+        </section>
+        <section id="servicesCards">
+          <p class="krona white title">Services</p>
+          <div id="services">
+            <div class="service hidden">
+              <p class="krona title">Painting, wallpapering</p>
+              <p class="grey">
+                From designing office environments to painting large industrial
+                halls.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(/images/services/painting.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Tiling</p>
+              <p class="grey">Cold and warm tiling.</p>
+              <div
+                class="img"
+                style="background-image: url(/images/services/tiling.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Electrical works</p>
+              <p class="grey">
+                From minor repairs to the design of complex systems.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(/images/services/electrical.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Drywall construction</p>
+              <p class="grey">
+                Designing offices, highlighted areas (e.g.,
+                <a
+                  id="serverromReference"
+                  href="references.html#serverromReference"
+                  >server rooms</a
+                >) according to individual needs.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(/images/services/drywall.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p class="krona title">Carpentry works</p>
+              <p class="grey">
+                From replacing furniture elements to complete interior design
+                solutions.
+              </p>
+              <div
+                class="img"
+                style="background-image: url(/images/services/carpentry.png)"
+              ></div>
+            </div>
+            <div class="service hidden">
+              <p style="width: 70%" class="krona title">
+                Regulatory compliance inspections
+              </p>
+              <p class="grey">
+                Regulatory compliance checks for construction projects. We
+                ensure full conformity with all relevant codes and
+                documentation.
+              </p>
+              <div
+                class="img"
+                style="
+                  background-image: url(/images/services/legal_inspection.png);
+                "
+              ></div>
+            </div>
           </div>
-          <div class="service hidden">
-            <p class="krona title">Tiling</p>
-            <p class="grey">
-              Cold and warm tiling.
-            </p>
-            <div class="img" style="background-image: url(/images/services/tiling.png)"></div>
+          <a href="services.html" class="more">More info</a>
+        </section>
+        <section id="references">
+          <p class="white krona title" style="margin-left: 12.5vw">
+            Some of our previous works
+          </p>
+          <div id="works">
+            <div class="cards">
+              <p class="krona">Wall construction</p>
+              <div
+                class="img"
+                style="background-image: url(/images/falepites.png)"
+              ></div>
+            </div>
+            <div class="cards">
+              <p class="krona">Office renovation</p>
+              <div
+                class="img"
+                style="background-image: url(/images/irodafelujitas.png)"
+              ></div>
+            </div>
+            <div class="cards">
+              <p class="krona">Office renovation</p>
+              <div
+                class="img"
+                style="background-image: url(/images/irodafelujitas2.png)"
+              ></div>
+            </div>
+            <div id="moreworks">
+              <a href="references.html">Our further works</a>
+            </div>
           </div>
-          <div class="service hidden">
-            <p class="krona title">Electrical works</p>
-            <p class="grey">
-              From minor repairs to the design of complex systems.
-            </p>
-            <div class="img" style="background-image: url(/images/services/electrical.png)"></div>
-          </div>
-          <div class="service hidden">
-            <p class="krona title">Drywall construction</p>
-            <p class="grey">
-              Designing offices, highlighted areas (e.g., <a id="serverromReference"
-                href="references.html#serverromReference">server rooms</a>) according to individual needs.
-            </p>
-            <div class="img" style="background-image: url(/images/services/drywall.png)"></div>
-          </div>
-          <div class="service hidden">
-            <p class="krona title">Carpentry works</p>
-            <p class="grey">
-              From replacing furniture elements to complete interior design solutions.
-            </p>
-            <div class="img" style="background-image: url(/images/services/carpentry.png)"></div>
-          </div>
-        </div>
-        <a href="services.html" class="more">More info</a>
-      </section>
-      <section id="references">
-        <p class="white krona title" style="margin-left: 12.5vw">Some of our previous works</p>
-        <div id="works">
-          <div class="cards">
-            <p class="krona">Wall construction</p>
-            <div class="img" style="background-image: url(/images/falepites.png)"></div>
-          </div>
-          <div class="cards">
-            <p class="krona">Office renovation</p>
-            <div class="img" style="background-image: url(/images/irodafelujitas.png)"></div>
-          </div>
-          <div class="cards">
-            <p class="krona">Office renovation</p>
-            <div class="img" style="background-image: url(/images/irodafelujitas2.png)"></div>
-          </div>
-          <div id="moreworks">
-            <a href="references.html">Our further works</a>
-          </div>
-        </div>
-      </section>
-      <section>
-        <p class="white krona title" style="margin-left: 12.5vw">
-          Our partners:
-        </p>
+        </section>
+        <section>
+          <p class="white krona title" style="margin-left: 12.5vw">
+            Our partners:
+          </p>
           <div id="partner-card">
             <div class="logo">
-              <div class="img-container"><img src="/images/partners/dana.png" alt="logo for Dana"></div>
+              <div class="img-container">
+                <img src="/images/partners/dana.png" alt="logo for Dana" />
+              </div>
               <span><a href="https://www.dana.com">Dana</a></span>
             </div>
             <div class="logo">
-              <div class="img-container"><img style="@media screen and (max-width: 600px) {width: 50vw;}" src="/images/partners/audi.png" alt="logo for Audi"></div>
+              <div class="img-container">
+                <img
+                  style="@media screen and (max-width: 600px) {width: 50vw}"
+                  src="/images/partners/audi.png"
+                  alt="logo for Audi"
+                />
+              </div>
               <span><a href="https://audi.hu/hu/">Audi</a></span>
             </div>
             <div class="logo">
-              <div class="img-container"><img style="@media screen and (max-width: 600px) {width: 50vw;}" src="/images/partners/melecs.svg" alt="logo for Melecs"></div>
+              <div class="img-container">
+                <img
+                  style="@media screen and (max-width: 600px) {width: 50vw}"
+                  src="/images/partners/melecs.svg"
+                  alt="logo for Melecs"
+                />
+              </div>
               <span><a href="https://www.melecs.com/hu">Melecs</a></span>
             </div>
           </div>
-        
-      </section>
-      <section>
-        <div id="why-us">
-          <p class="krona white">Why us?</p>
-          <p>
-            Our competitive advantage is that unlike larger companies, we also handle smaller jobs with high expertise
-            and quality.
-            Our colleagues are at your disposal at the following contacts.
-          </p>
-          <a href="contacts.html">Contact us</a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p class="title white krona">Valinor Ltd.</p>
-      <a target="_blank" href="mailto:info@valinor.hu" class="white">info@valinor.hu</a><br />
-      <a target="_blank" href="tel:+36304442663" class="white">+36 30 444 2663</a>
-      <a href="/en/">
-        <div class="img en"></div>
-      </a>
-      <p id="credits">The website was made by <a href="https://cseteandor.hu">Andor Csete</a></p>
-    </footer>
-  </article>
-</body>
-
+        </section>
+        <section>
+          <div id="why-us">
+            <p class="krona white">Why us?</p>
+            <p>
+              Our competitive advantage is that unlike larger companies, we also
+              handle smaller jobs with high expertise and quality. Our
+              colleagues are at your disposal at the following contacts.
+            </p>
+            <a href="contacts.html">Contact us</a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p class="title white krona">Valinor Ltd.</p>
+        <a target="_blank" href="mailto:info@valinor.hu" class="white"
+          >info@valinor.hu</a
+        ><br />
+        <a target="_blank" href="tel:+36304442663" class="white"
+          >+36 30 444 2663</a
+        >
+        <a href="/en/">
+          <div class="img en"></div>
+        </a>
+        <p id="credits">
+          The website was made by
+          <a href="https://cseteandor.hu">Andor Csete</a>
+        </p>
+      </footer>
+    </article>
+  </body>
 </html>
