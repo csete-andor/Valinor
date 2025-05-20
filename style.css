@@ -361,7 +361,6 @@ hr {
 }
 
 #partner-card{
-  width: 80vw;
   background-color: #788585;
   margin: auto;
   margin-top: 6em;
@@ -373,19 +372,21 @@ hr {
   font-family: Krona One ;
   padding-bottom: 2em;
   padding-top: 2em;
+  width: 80vw;
 }
 
 #partner-card > .logo{
   display: grid;
   margin-left: 3%;
   margin-right: 3%;
+  min-width: 5em;
 }
 #partner-card >.logo> .img-container{
   display: flex;
   width: 30%;
 }
 #partner-card > .logo > .img-container > img{
-  height: 5vw;
+  height: 4vw;
   align-self: center;
 }
 #partner-card > .logo > span{
@@ -401,6 +402,7 @@ hr {
   background-color: transparent;
   color: white;
   font-size: calc(1vw + 7px);
+  padding: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -517,7 +519,7 @@ hr {
     margin: auto;
   }
   #partner-card > .logo > .img-container > img{
-    width: 40vw;
+    width: 35vw;
     height: auto;
     margin: auto;
     margin-top: 2em;
